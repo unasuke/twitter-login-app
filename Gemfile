@@ -8,6 +8,8 @@ gem "rails", "~> 7.0.0.alpha2"
 gem "bootsnap", ">= 1.4.4", require: false
 gem "importmap-rails", ">= 0.3.4"
 gem "jbuilder", "~> 2.7"
+gem "omniauth"
+gem "omniauth-twitter"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "stimulus-rails", ">= 0.4.0"
