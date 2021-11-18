@@ -84,6 +84,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: twitter_login_app_production
   username: twitter_login_app
   password: <%= ENV["TWITTER_LOGIN_APP_DATABASE_PASSWORD"] %>
