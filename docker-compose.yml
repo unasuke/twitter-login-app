@@ -13,6 +13,7 @@ services:
       TWITTER_API_KEY: ${TWITTER_API_KEY}
       TWITTER_API_SECRET: ${TWITTER_API_SECRET}
       RAILS_ENV: development
+    tty: true
   db:
     image: postgres:14.1
     environment:
