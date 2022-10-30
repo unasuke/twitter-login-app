@@ -1,24 +1,7 @@
-# README
+# twitter-login-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## What is this app?
 
-Things you may want to cover:
+This rails application is a sample application of [omniauth-twitter2](https://github.com/unasuke/omniauth-twitter2) gem.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Hosted on https://twitter-login-app.onrender.com and anyone test there.
