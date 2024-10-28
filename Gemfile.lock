@@ -183,7 +183,7 @@ GEM
     omniauth-twitter2 (0.1.0)
       omniauth
       omniauth-oauth2 (~> 1.0)
-    pg (1.5.7)
+    pg (1.5.9)
     psych (5.1.2)
       stringio
     public_suffix (5.0.4)
