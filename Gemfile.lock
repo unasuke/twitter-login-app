@@ -1,12 +1,3 @@
-GIT
-  remote: https://github.com/unasuke/omniauth-twitter2.git
-  revision: e81374489c800c2d5d7308f1be29e2c7a8af2fef
-  branch: twitter-is-now-x
-  specs:
-    omniauth-twitter2 (0.1.0)
-      omniauth
-      omniauth-oauth2 (~> 1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -111,10 +102,12 @@ GEM
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
-    faraday (2.9.0)
-      faraday-net_http (>= 2.0, < 3.2)
-    faraday-net_http (3.1.0)
-      net-http
+    faraday (2.13.4)
+      faraday-net_http (>= 2.0, < 3.5)
+      json
+      logger
+    faraday-net_http (3.4.1)
+      net-http (>= 0.5.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     hashie (5.0.0)
@@ -132,7 +125,8 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jwt (2.8.1)
+    json (2.13.2)
+    jwt (3.1.2)
       base64
     logger (1.7.0)
     loofah (2.24.1)
@@ -149,9 +143,10 @@ GEM
     mini_portile2 (2.8.9)
     minitest (5.25.5)
     msgpack (1.8.0)
-    multi_xml (0.6.0)
+    multi_xml (0.7.2)
+      bigdecimal (~> 3.1)
     mutex_m (0.3.0)
-    net-http (0.4.1)
+    net-http (0.6.0)
       uri
     net-imap (0.4.20)
       date
@@ -169,13 +164,14 @@ GEM
     nokogiri (1.18.8-x86_64-linux-gnu)
       racc (~> 1.4)
     oauth (0.5.8)
-    oauth2 (2.0.9)
-      faraday (>= 0.17.3, < 3.0)
-      jwt (>= 1.0, < 3.0)
+    oauth2 (2.0.12)
+      faraday (>= 0.17.3, < 4.0)
+      jwt (>= 1.0, < 4.0)
+      logger (~> 1.2)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 4)
-      snaky_hash (~> 2.0)
-      version_gem (~> 1.1)
+      snaky_hash (~> 2.0, >= 2.0.3)
+      version_gem (>= 1.1.8, < 3)
     omniauth (2.1.3)
       hashie (>= 3.4.6)
       rack (>= 2.2.3)
@@ -192,6 +188,9 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
+    omniauth-twitter2 (1.0.0)
+      omniauth
+      omniauth-oauth2 (~> 1.0)
     pg (1.6.0)
     pg (1.6.0-x86_64-linux)
     pp (0.6.2)
@@ -204,7 +203,7 @@ GEM
     puma (6.6.0)
       nio4r (~> 2.0)
     racc (1.8.1)
-    rack (3.1.16)
+    rack (3.2.0)
     rack-protection (4.1.1)
       base64 (>= 0.1.0)
       logger (>= 1.6.0)
@@ -258,9 +257,9 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    snaky_hash (2.0.1)
-      hashie
-      version_gem (~> 1.1, >= 1.1.1)
+    snaky_hash (2.0.3)
+      hashie (>= 0.1.0, < 6)
+      version_gem (>= 1.1.8, < 3)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -283,8 +282,8 @@ GEM
       railties (>= 7.1.0)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
-    uri (0.13.2)
-    version_gem (1.1.3)
+    uri (1.0.3)
+    version_gem (1.1.8)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -316,7 +315,7 @@ DEPENDENCIES
   omniauth-oauth2
   omniauth-rails_csrf_protection
   omniauth-twitter
-  omniauth-twitter2!
+  omniauth-twitter2
   pg (~> 1.6)
   puma (~> 6.6)
   rails (= 7.1.3.4)
