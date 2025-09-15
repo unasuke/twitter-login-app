@@ -200,7 +200,7 @@ GEM
       date
       stringio
     public_suffix (5.0.4)
-    puma (6.6.1)
+    puma (7.0.3)
       nio4r (~> 2.0)
     racc (1.8.1)
     rack (3.2.0)
@@ -317,7 +317,7 @@ DEPENDENCIES
   omniauth-twitter
   omniauth-twitter2
   pg (~> 1.6)
-  puma (~> 6.6)
+  puma (~> 7.0)
   rails (= 7.1.3.4)
   selenium-webdriver
   sprockets-rails
