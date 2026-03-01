@@ -1,8 +1,9 @@
 require "test_helper"
 
 class SessionsControllerTest < ActionDispatch::IntegrationTest
-  test "should get create" do
-    get sessions_create_url
-    assert_response :success
+  test "should logout" do
+    get logout_url
+    assert_response :redirect
+    assert_redirected_to root_path
   end
 end
