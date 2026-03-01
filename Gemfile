@@ -16,12 +16,12 @@ gem "puma", "~> 7.1"
 gem "stimulus-rails", ">= 0.4.0"
 gem "tailwindcss-rails", "~> 4.0"
 gem "turbo-rails", ">= 0.7.11"
-gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "sprockets-rails"
 
 
 group :development, :test do
-  gem "debug", ">= 1.0.0", platforms: %i[ mri mingw x64_mingw ]
+  gem "debug", ">= 1.0.0", platforms: %i[ mri windows ]
 end
 
 group :development do
