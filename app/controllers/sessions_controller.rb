@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
   private
 
   def auth_hash
+    Rails.logger.info request.env['omniauth.auth'].to_json
     request.env['omniauth.auth']
   end
 end
