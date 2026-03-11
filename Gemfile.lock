@@ -1,3 +1,12 @@
+GIT
+  remote: https://github.com/unasuke/omniauth-twitter2.git
+  revision: ad7bc038690afb5389b012b86d5b908574b04f85
+  branch: add-email-support
+  specs:
+    omniauth-twitter2 (1.0.0)
+      omniauth
+      omniauth-oauth2 (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -193,9 +202,6 @@ GEM
     omniauth-twitter (1.4.0)
       omniauth-oauth (~> 1.1)
       rack
-    omniauth-twitter2 (1.0.0)
-      omniauth
-      omniauth-oauth2 (~> 1.0)
     pg (1.6.3)
     pg (1.6.3-x86_64-linux)
     pp (0.6.3)
@@ -324,7 +330,7 @@ DEPENDENCIES
   omniauth-oauth2
   omniauth-rails_csrf_protection
   omniauth-twitter
-  omniauth-twitter2
+  omniauth-twitter2!
   pg (~> 1.6)
   puma (~> 7.2)
   rails (= 8.1.2)
