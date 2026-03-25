@@ -1,4 +1,4 @@
-FROM ruby:3.3.3
+FROM ruby:4.0.2
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y libpq-dev make g++ git
