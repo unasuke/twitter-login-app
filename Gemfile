@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem "rails", "8.1.2"
+gem "rails", "8.1.3"
 
 gem "bootsnap", ">= 1.4.4", require: false
 gem "importmap-rails", ">= 0.3.4"
