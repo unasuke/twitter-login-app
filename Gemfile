@@ -5,7 +5,7 @@ gem "rails", "8.1.3"
 
 gem "bootsnap", ">= 1.4.4", require: false
 gem "importmap-rails", ">= 0.3.4"
-gem "jbuilder", "~> 2.14"
+gem "jbuilder", "~> 2.15"
 gem "omniauth"
 gem "omniauth-rails_csrf_protection"
 gem "omniauth-twitter"
