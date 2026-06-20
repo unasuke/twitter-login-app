@@ -14,7 +14,7 @@ gem "omniauth-oauth2"
 gem "pg", "~> 1.6"
 gem "puma", "~> 8.0"
 gem "stimulus-rails", ">= 0.4.0"
-gem "tailwindcss-rails", "~> 4.0"
+gem "tailwindcss-rails", "~> 4.6"
 gem "turbo-rails", ">= 0.7.11"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 gem "sprockets-rails"
